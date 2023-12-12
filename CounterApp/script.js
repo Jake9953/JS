@@ -6,10 +6,13 @@ let countEl = document.getElementById("count-el");
 
 // Function for increment button
 function increment() {
-  count = count + 1;
+  count++;
   countEl.innerText = count;
 }
 
+let saveEl = document.getElementById("save-el");
+
 function save() {
-  console.log(count)
+  let countDash = count + " -- "
+  saveEl.innerText += " " + countDash
 }

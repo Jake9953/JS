@@ -38,3 +38,15 @@ button{
 #save-btn{
   background: rgb(12, 190, 221);
 }
+
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: rgb(255, 0, 140);
+}
+
+p:hover{
+  color: rgb(93, 38, 221);
+ text-decoration: underline;
+}
