@@ -1,0 +1,60 @@
+body{
+  background: linear-gradient(45deg, #548654,#895682);
+  color: lightcoral;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+h1, p{
+text-transform: capitalize;
+font-weight: bold;
+}
+
+p{
+  color: white;
+}
+#message-el{
+  font-style: italic;
+}
+
+#startgame{
+  width: 150px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  text-transform: capitalize;
+  color: blue;
+  background-color: aquamarine;
+  border: solid green;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#startgame:hover{
+text-transform: uppercase;
+background-color: rgb(219, 23, 138);
+color: white;
+}
+
+#newcard{
+    width: 150px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  text-transform: capitalize;
+  color: blue;
+  background-color: aquamarine;
+  border: solid green;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#newcard:hover{
+text-transform: uppercase;
+background-color: rgb(219, 23, 138);
+color: white;
+}
