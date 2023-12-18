@@ -7,18 +7,16 @@ if (age < 21) {
 } else {
   console.log("Welcome SIR, Enjoy your stay and play responsibly🤝")
 }
-
 let firstCard = getRandomCard();
 let secondCard = getRandomCard();
-let cards = [firstCard, secondCard];
-let sum = firstCard + secondCard;
+let cards = [];
+let sum = 0;
 let hashBlackJack = false;
 let isAlive = true;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.querySelector("#cards-el");
-
 // Function that returns a random number
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
@@ -34,6 +32,11 @@ function getRandomCard() {
 }
 // function for start game button
 function startGame() {
+  isAlive = true
+  let firstCard = getRandomCard()
+  let secondCard = getRandomCard()
+  cards = [firstCard, secondCard]
+  sum = firstCard + secondCard;
   renderGame()
 }
 
@@ -62,6 +65,5 @@ function newCard() {
   sum += card;
   cards.push(card);
   renderGame()
-
 }
 
