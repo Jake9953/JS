@@ -1,12 +1,3 @@
-console.log("Welcome to DotStone Nightclub!\n How old are my friend ?");
-
-let age = 22;
-
-if (age < 21) {
-  console.log("Sorry SIR!, Underage are not allowed!")
-} else {
-  console.log("Welcome SIR, Enjoy your stay and play responsibly🤝")
-}
 let firstCard = getRandomCard();
 let secondCard = getRandomCard();
 let cards = [];
@@ -61,9 +52,12 @@ function renderGame() {
 
 // Function to draw a new line
 function newCard() {
-  let card = getRandomCard()
-  sum += card;
-  cards.push(card);
-  renderGame()
+  if (isAlive === true && hashBlackJack === false) {
+    let card = getRandomCard()
+    sum += card;
+    cards.push(card);
+    renderGame()
+  }
+
 }
 

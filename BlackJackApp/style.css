@@ -38,7 +38,7 @@ background-color: rgb(219, 23, 138);
 color: white;
 }
 
-#newcard{
+#newCard{
     width: 150px;
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
@@ -53,7 +53,7 @@ color: white;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-#newcard:hover{
+#newCard:hover{
 text-transform: uppercase;
 background-color: rgb(219, 23, 138);
 color: white;
