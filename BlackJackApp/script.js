@@ -8,8 +8,8 @@ if (age < 21) {
   console.log("Welcome SIR, Enjoy your stay and play responsibly🤝")
 }
 
-let firstCard = 8;
-let secondCard = 13;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let hashBlackJack = false;
@@ -19,7 +19,19 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.querySelector("#cards-el");
 
+// Function that returns a random number
+function getRandomCard() {
+  let randomNumber = Math.floor(Math.random() * 13) + 1;
+  if (randomNumber === 1) {
+    return 11
+  } else if (randomNumber > 10) {
+    return 10
+  } else {
+    return randomNumber;
+  }
 
+
+}
 // function for start game button
 function startGame() {
   renderGame()
@@ -27,7 +39,10 @@ function startGame() {
 
 // function to renderGame
 function renderGame() {
-  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+  cardsEl.textContent = "Cards: "
+  for (let i = 0; i < cards.length; i++) {
+    cardsEl.textContent += cards[i] + " "
+  }
   sumEl.textContent = "Sum: " + sum;
   if (sum <= 20) {
     message = "Do you want to draw a new card? 😊"
@@ -43,11 +58,10 @@ function renderGame() {
 
 // Function to draw a new line
 function newCard() {
-  let card = 5;
+  let card = getRandomCard()
   sum += card;
-  renderGame()
   cards.push(card);
+  renderGame()
 
 }
 
-// continue at 4:50
