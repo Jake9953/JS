@@ -70,3 +70,4 @@ function newCard() {
 
 }
 
+// Start at objects 3:45:17
